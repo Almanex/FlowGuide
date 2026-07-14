@@ -1,0 +1,74 @@
+<Window x:Class="FlowGuide.Recorder.StepEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Step Editor" Height="500" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock FontSize="16" FontWeight="Bold" Text="Step Editor - "/>
+            <TextBlock Name="StepCountText" FontSize="16" FontWeight="Bold" Text="0 steps recorded"/>
+        </StackPanel>
+
+        <!-- Steps List -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <ItemsControl Name="StepsListBox" AllowDrop="True" 
+                          PreviewMouseLeftButtonDown="StepsListBox_PreviewMouseLeftButtonDown"
+                          PreviewMouseMove="StepsListBox_PreviewMouseMove"
+                          Drop="StepsListBox_Drop">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="#CCCCCC" BorderThickness="1" Margin="0,0,0,10" Padding="10" CornerRadius="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Step Number and Instruction -->
+                                <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="14">
+                                    <Run Text="["/>
+                                    <Run Text="{Binding StepNumber}"/>
+                                    <Run Text="] "/>
+                                    <Run Text="{Binding InstructionText}"/>
+                                </TextBlock>
+
+                                <!-- Type Info -->
+                                <TextBlock Grid.Row="1" Foreground="Gray" FontSize="12" Margin="0,5,0,5">
+                                    <Run Text="Type: "/>
+                                    <Run Text="{Binding ActionType}"/>
+                                    <Run Text=" "/>
+                                    <Run Text="{Binding SystemActionTypeText}"/>
+                                </TextBlock>
+
+                                <!-- Buttons -->
+                                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                    <Button Content="Edit" Width="60" Margin="0,0,5,0" Click="EditStep_Click" Tag="{Binding}"/>
+                                    <Button Content="Delete" Width="60" Margin="0,0,5,0" Click="DeleteStep_Click" Tag="{Binding}"/>
+                                    <Button Content="↑" Width="30" Margin="0,0,5,0" Click="MoveUp_Click" Tag="{Binding}"/>
+                                    <Button Content="↓" Width="30" Click="MoveDown_Click" Tag="{Binding}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Footer Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Save Guide" Width="100" Margin="0,0,10,0" Click="SaveGuide_Click" Background="#FF4CAF50" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Cancel" Width="100" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

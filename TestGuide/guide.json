@@ -1,0 +1,502 @@
+{
+  "Id": "22b8369e-ad1c-4cf2-a979-58ada87c9f56",
+  "Title": "\u041D\u043E\u0432\u044B\u0439 \u0433\u0430\u0439\u04341",
+  "Author": "User",
+  "TargetProcessName": "",
+  "Steps": [
+    {
+      "StepId": "fdba908b-95d2-46dd-aae8-9d302391bc8f",
+      "ActionType": 5,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "\u0412\u0440\u0435\u043C\u044F \u0438 \u044F\u0437\u044B\u043A",
+        "ControlType": "ControlType.ListItem",
+        "ClassName": "Microsoft.UI.Xaml.Controls.NavigationViewItem",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]/Custom[0]/Window[0]/Pane[0]/Group[0]/ListItem[\u0412\u0440\u0435\u043C\u044F \u0438 \u044F\u0437\u044B\u043A]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 522,
+            "Y": 799
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 488,
+            "Height": 63
+          },
+          "X": 522,
+          "Y": 799,
+          "Width": 488,
+          "Height": 63,
+          "Left": 522,
+          "Top": 799,
+          "Right": 1010,
+          "Bottom": 862,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_2.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0412\u0440\u0435\u043C\u044F \u0438 \u044F\u0437\u044B\u043A",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": 1,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "d1d84101-3ce9-480d-9bfd-b760bf1f692b",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043C\u044F",
+        "ControlType": "ControlType.ListItem",
+        "ClassName": "ListViewItem",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]/Custom[0]/Pane[0]/List[0]/ListItem[\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043C\u044F]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 1056,
+            "Y": 420
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 1220,
+            "Height": 125
+          },
+          "X": 1056,
+          "Y": 420,
+          "Width": 1220,
+          "Height": 125,
+          "Left": 1056,
+          "Top": 420,
+          "Right": 2276,
+          "Bottom": 545,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_3.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043C\u044F",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "f3d0cdca-3b80-49b0-8136-4bd8834fa90a",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "SystemSettings_Region_Additional_Settings_Link_ButtonEntityItem",
+        "Name": "\u042F\u0437\u044B\u043A \u0438 \u0440\u0435\u0433\u0438\u043E\u043D",
+        "ControlType": "ControlType.Group",
+        "ClassName": "NamedContainerAutomationPeer",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]/Custom[0]/Group[1]/Pane[0]/Group[\u0421\u0441\u044B\u043B\u043A\u0438 \u043F\u043E \u0442\u0435\u043C\u0435]/Group[\u042F\u0437\u044B\u043A \u0438 \u0440\u0435\u0433\u0438\u043E\u043D]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 1065,
+            "Y": 1025
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 1206,
+            "Height": 121
+          },
+          "X": 1065,
+          "Y": 1025,
+          "Width": 1206,
+          "Height": 121,
+          "Left": 1065,
+          "Top": 1025,
+          "Right": 2271,
+          "Bottom": 1146,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_4.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u042F\u0437\u044B\u043A \u0438 \u0440\u0435\u0433\u0438\u043E\u043D",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "d514c814-64dc-4876-9eb1-696626487e21",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "SystemSettings_Keyboard_Additional_Settings_DeviceTyping_Link_ButtonEntityItem",
+        "Name": "\u0412\u0432\u043E\u0434",
+        "ControlType": "ControlType.Group",
+        "ClassName": "NamedContainerAutomationPeer",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]/Custom[0]/Group[1]/Pane[0]/Group[\u0421\u043E\u043F\u0443\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0435 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Group[\u0412\u0432\u043E\u0434]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 1065,
+            "Y": 1117
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 1206,
+            "Height": 120
+          },
+          "X": 1065,
+          "Y": 1117,
+          "Width": 1206,
+          "Height": 120,
+          "Left": 1065,
+          "Top": 1117,
+          "Right": 2271,
+          "Bottom": 1237,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_5.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0412\u0432\u043E\u0434",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "a76085af-4a7e-4d65-b542-9ac858158cad",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "Close",
+        "Name": "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
+        "ControlType": "ControlType.Button",
+        "ClassName": "",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Button[\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 2244,
+            "Y": 58
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 69,
+            "Height": 48
+          },
+          "X": 2244,
+          "Y": 58,
+          "Width": 69,
+          "Height": 48,
+          "Left": 2244,
+          "Top": 58,
+          "Right": 2313,
+          "Bottom": 106,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_6.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "363f9f77-4659-41aa-8ef7-9eaf0367a84b",
+      "ActionType": 5,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "",
+        "ControlType": "ControlType.Pane",
+        "ClassName": "Shell_TrayWnd",
+        "HierarchyPath": "/Pane[0]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 0,
+            "Y": 1516
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 2560,
+            "Height": 84
+          },
+          "X": 0,
+          "Y": 1516,
+          "Width": 2560,
+          "Height": 84,
+          "Left": 0,
+          "Top": 1516,
+          "Right": 2560,
+          "Bottom": 1600,
+          "IsEmpty": false
+        },
+        "IsSystemElement": true
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043C\u0435\u043D\u044E \u041F\u0443\u0441\u043A",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": 0,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "9b634926-e9b0-4842-ad94-b799ac13f4d3",
+      "ActionType": 5,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "",
+        "ControlType": "ControlType.Pane",
+        "ClassName": "Shell_TrayWnd",
+        "HierarchyPath": "/Pane[0]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 0,
+            "Y": 1516
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 2560,
+            "Height": 84
+          },
+          "X": 0,
+          "Y": 1516,
+          "Width": 2560,
+          "Height": 84,
+          "Left": 0,
+          "Top": 1516,
+          "Right": 2560,
+          "Bottom": 1600,
+          "IsEmpty": false
+        },
+        "IsSystemElement": true
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043C\u0435\u043D\u044E \u041F\u0443\u0441\u043A",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": 0,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "2d0cfcba-f7c6-419b-9247-db61695ef787",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "NVIDIA GeForce Overlay",
+        "ControlType": "ControlType.Pane",
+        "ClassName": "CEF-OSC-WIDGET",
+        "HierarchyPath": "/Pane[NVIDIA GeForce Overlay]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": true,
+            "X": 0,
+            "Y": 0
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 2560,
+            "Height": 1600
+          },
+          "X": 0,
+          "Y": 0,
+          "Width": 2560,
+          "Height": 1600,
+          "Left": 0,
+          "Top": 0,
+          "Right": 2560,
+          "Bottom": 1600,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 NVIDIA GeForce Overlay",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "12d99008-4356-4496-8971-0b0a231f1409",
+      "ActionType": 5,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "",
+        "ControlType": "ControlType.Pane",
+        "ClassName": "Shell_TrayWnd",
+        "HierarchyPath": "/Pane[0]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 0,
+            "Y": 1516
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 2560,
+            "Height": 84
+          },
+          "X": 0,
+          "Y": 1516,
+          "Width": 2560,
+          "Height": 84,
+          "Left": 0,
+          "Top": 1516,
+          "Right": 2560,
+          "Bottom": 1600,
+          "IsEmpty": false
+        },
+        "IsSystemElement": true
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043C\u0435\u043D\u044E \u041F\u0443\u0441\u043A",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": 0,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "235dd661-6ee4-40f5-a7ae-8bc6cbcbc654",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "",
+        "Name": "NVIDIA GeForce Overlay",
+        "ControlType": "ControlType.Pane",
+        "ClassName": "CEF-OSC-WIDGET",
+        "HierarchyPath": "/Pane[NVIDIA GeForce Overlay]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": true,
+            "X": 0,
+            "Y": 0
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 2560,
+            "Height": 1600
+          },
+          "X": 0,
+          "Y": 0,
+          "Width": 2560,
+          "Height": 1600,
+          "Left": 0,
+          "Top": 0,
+          "Right": 2560,
+          "Bottom": 1600,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 NVIDIA GeForce Overlay",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "3f62460d-beff-40e0-bd80-aaa30e8e8ac3",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "SettingsLabel",
+        "Name": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+        "ControlType": "ControlType.Text",
+        "ClassName": "TextBlock",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]/Text[\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 582,
+            "Y": 86
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 1449,
+            "Height": 28
+          },
+          "X": 582,
+          "Y": 86,
+          "Width": 1449,
+          "Height": 28,
+          "Left": 582,
+          "Top": 86,
+          "Right": 2031,
+          "Bottom": 114,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    },
+    {
+      "StepId": "f32b8fe7-0d83-4c11-8f18-781941e9487c",
+      "ActionType": 0,
+      "TargetSelector": {
+        "AutomationId": "Close",
+        "Name": "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
+        "ControlType": "ControlType.Button",
+        "ClassName": "",
+        "HierarchyPath": "/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Window[\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]/Button[\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B]",
+        "BoundingRectangle": {
+          "Location": {
+            "IsEmpty": false,
+            "X": 2244,
+            "Y": 58
+          },
+          "Size": {
+            "IsEmpty": false,
+            "Width": 69,
+            "Height": 48
+          },
+          "X": 2244,
+          "Y": 58,
+          "Width": 69,
+          "Height": 48,
+          "Left": 2244,
+          "Top": 58,
+          "Right": 2313,
+          "Bottom": 106,
+          "IsEmpty": false
+        },
+        "IsSystemElement": false
+      },
+      "FallbackImagePath": "step_7.png",
+      "InstructionText": "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0417\u0430\u043A\u0440\u044B\u0442\u044C \u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
+      "ScreenContextPath": null,
+      "TextToType": null,
+      "KeyToPress": null,
+      "SystemActionType": null,
+      "MsSettingsCommand": null,
+      "ShowAutoExecuteButton": true
+    }
+  ],
+  "CreatedAt": "2025-11-21T15:50:07.7730089+01:00",
+  "FormatVersion": "1.0"
+}

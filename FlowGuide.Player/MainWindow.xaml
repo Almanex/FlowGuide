@@ -1,0 +1,28 @@
+﻿<Window x:Class="FlowGuide.Player.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FlowGuide Player" Height="350" Width="500">
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="FlowGuide Player" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            
+            <Button Name="LoadGuideBtn" Content="📂 Load Guide (.flow)" 
+                    Padding="10,5" Margin="0,0,0,15" 
+                    Click="LoadGuideBtn_Click"/>
+            
+            <CheckBox Name="EnableOverlayCheckbox" 
+                      Content="Enable Overlay (Spotlight &amp; Highlight)" 
+                      IsChecked="True"
+                      Margin="0,0,0,5"
+                      HorizontalAlignment="Center"/>
+            
+            <TextBlock Text="💡 Press 'H' during playback to toggle overlay" 
+                       FontSize="11" 
+                       Foreground="Gray" 
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,15"/>
+            
+            <TextBlock Name="StatusText" Text="Ready" Foreground="Gray" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

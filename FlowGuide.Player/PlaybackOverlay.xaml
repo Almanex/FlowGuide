@@ -1,0 +1,88 @@
+<Window x:Class="FlowGuide.Player.PlaybackOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="FlowGuide Player Overlay" 
+        Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        Left="0" Top="0">
+    <Grid>
+        <!-- Background Dimming Layer -->
+        <Path Name="SpotlightPath" Fill="#AA000000" Stretch="None" StrokeThickness="0" IsHitTestVisible="False">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Exclude">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="0,0,1920,1080" x:Name="ScreenGeometry"/>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="0,0,0,0" x:Name="HoleGeometry" RadiusX="5" RadiusY="5"/>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+
+        <!-- Tooltip / Instruction Bubble Placeholder -->
+        <Canvas Name="OverlayCanvas">
+            <!-- Highlight Border around target element -->
+            <Rectangle Name="HighlightBorder" 
+                       Stroke="#FF00FF00" 
+                       StrokeThickness="3" 
+                       Fill="Transparent"
+                       Width="0" 
+                       Height="0"
+                       Canvas.Left="0"
+                       Canvas.Top="0"
+                       Visibility="Collapsed"
+                       IsHitTestVisible="False"
+                       RadiusX="5"
+                       RadiusY="5"/>
+            
+            <Border Name="InstructionBubble" 
+                    Background="White" 
+                    CornerRadius="8" 
+                    Padding="10" 
+                    Canvas.Left="100" 
+                    Canvas.Top="100"
+                    Visibility="Collapsed"
+                    Cursor="SizeAll"
+                    MouseLeftButtonDown="InstructionBubble_MouseLeftButtonDown"
+                    MouseMove="InstructionBubble_MouseMove"
+                    MouseLeftButtonUp="InstructionBubble_MouseLeftButtonUp">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Header: Step Counter and Close Button -->
+                    <TextBlock Name="StepCounterText" Grid.Row="0" Grid.Column="0" Text="Step 1 of 5" FontSize="10" Foreground="Gray" VerticalAlignment="Center"/>
+                    <Button Grid.Row="0" Grid.Column="1" Content="❌" Width="20" Height="20" Background="Transparent" BorderThickness="0" Padding="0" Margin="5,0,0,0" Click="CloseBtn_Click" ToolTip="Stop Guide"/>
+
+                    <!-- Instruction Text -->
+                    <TextBlock Name="InstructionText" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Click here" FontWeight="Bold" FontSize="14" TextWrapping="Wrap" MaxWidth="200" Margin="0,5,0,0"/>
+
+                    <!-- Auto Execute Button (for system actions) -->
+                    <Button Name="AutoExecuteButton" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="🚀 Выполнить автоматически" Margin="0,10,0,5" Click="AutoExecuteBtn_Click" Visibility="Collapsed" Background="#FF4CAF50" Foreground="White" FontWeight="Bold"/>
+
+                    <!-- Next Button -->
+                    <Button x:Name="NextStepButton" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Next Step" Margin="0,5,0,0" Click="NextStepBtn_Click"/>
+                </Grid>
+            </Border>
+        </Canvas>
+    </Grid>
+</Window>

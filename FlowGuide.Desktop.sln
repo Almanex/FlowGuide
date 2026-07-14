@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowGuide.Core", "FlowGuide.Core\FlowGuide.Core.csproj", "{C1A81FEC-86E9-449D-9579-0DED2EAEE34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowGuide.Recorder", "FlowGuide.Recorder\FlowGuide.Recorder.csproj", "{1AD774FD-A8C2-4D40-874E-FA554E5FD94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowGuide.Player", "FlowGuide.Player\FlowGuide.Player.csproj", "{31D96ABA-B2F1-4F6D-BA60-DBBE8E0B6F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1A81FEC-86E9-449D-9579-0DED2EAEE34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A81FEC-86E9-449D-9579-0DED2EAEE34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A81FEC-86E9-449D-9579-0DED2EAEE34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A81FEC-86E9-449D-9579-0DED2EAEE34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD774FD-A8C2-4D40-874E-FA554E5FD94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD774FD-A8C2-4D40-874E-FA554E5FD94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD774FD-A8C2-4D40-874E-FA554E5FD94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD774FD-A8C2-4D40-874E-FA554E5FD94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D96ABA-B2F1-4F6D-BA60-DBBE8E0B6F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D96ABA-B2F1-4F6D-BA60-DBBE8E0B6F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D96ABA-B2F1-4F6D-BA60-DBBE8E0B6F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D96ABA-B2F1-4F6D-BA60-DBBE8E0B6F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

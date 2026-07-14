@@ -1,0 +1,42 @@
+# .gitignore for .NET and Visual Studio projects
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Mono/MSBuild/Nuget
+project.assets.json
+project.nuget.cache
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# IDEs (Rider, VS Code)
+.idea/
+.vscode/
+*.sln.DotSettings.user
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Log files
+*.log
+build_log.txt

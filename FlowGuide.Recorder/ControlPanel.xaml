@@ -1,0 +1,108 @@
+<Window x:Class="FlowGuide.Recorder.ControlPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="FlowGuide Controls" 
+        Height="60" Width="250"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False">
+
+    <Border Background="#2D2D30" 
+            CornerRadius="30" 
+            BorderBrush="#3E3E42" 
+            BorderThickness="1">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.5"/>
+        </Border.Effect>
+
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
+            
+            <!-- Start/Resume Button -->
+            <Button x:Name="RecordBtn" 
+                    Width="40" Height="40" 
+                    Margin="5"
+                    Click="RecordBtn_Click"
+                    ToolTip="Начать запись"
+                    Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#C72E2E" x:Name="Bg"/>
+                            <Ellipse Fill="White" Width="16" Height="16" x:Name="Icon"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bg" Property="Fill" Value="#E64646"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Pause Button -->
+            <Button x:Name="PauseBtn" 
+                    Width="40" Height="40" 
+                    Margin="5"
+                    Click="PauseBtn_Click"
+                    ToolTip="Пауза"
+                    Cursor="Hand"
+                    Visibility="Collapsed">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#E6E6E6" x:Name="Bg"/>
+                            <Grid Width="14" Height="16">
+                                <Rectangle Fill="#2D2D30" Width="4" Height="16" HorizontalAlignment="Left"/>
+                                <Rectangle Fill="#2D2D30" Width="4" Height="16" HorizontalAlignment="Right"/>
+                            </Grid>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bg" Property="Fill" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Stop/Save Button -->
+            <Button x:Name="StopBtn" 
+                    Width="40" Height="40" 
+                    Margin="5"
+                    Click="StopBtn_Click"
+                    ToolTip="Остановить и сохранить"
+                    Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#0E639C" x:Name="Bg"/>
+                            <Rectangle Fill="White" Width="14" Height="14" RadiusX="2" RadiusY="2"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bg" Property="Fill" Value="#1177BB"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Drag Handle -->
+            <Border Width="20" Background="Transparent" Cursor="SizeAll" MouseLeftButtonDown="DragHandle_MouseDown">
+                <Grid>
+                    <Ellipse Fill="#555" Width="4" Height="4" VerticalAlignment="Top" Margin="0,15,0,0"/>
+                    <Ellipse Fill="#555" Width="4" Height="4" VerticalAlignment="Center"/>
+                    <Ellipse Fill="#555" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,15"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Border>
+</Window>
